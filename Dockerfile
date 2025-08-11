@@ -7,7 +7,7 @@ RUN sed -i 's/port="8080"/port="8081"/' /usr/local/tomcat/conf/server.xml
 COPY target/NETFLIX-1.2.2.war /usr/local/tomcat/webapps/NETFLIX.war
 
 # Expose the new port
-EXPOSE 8080
+EXPOSE 8081
 
 CMD ["catalina.sh", "run"]
 
